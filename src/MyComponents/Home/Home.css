@@ -1,0 +1,113 @@
+.my-home{
+    /* background: #0D0A0B url(../../Assets/images/hero-bg.jpg) no-repeat center center; */
+    background: #0D0A0B url(../../Assets/images/mine/b.png) no-repeat center center;
+    background-size: cover !important;
+	-webkit-background-size: cover !important;
+    background-attachment: fixed;
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: .5; */
+    opacity: .3;
+    background-color: #111111;
+}
+
+.shadow{
+    opacity: .8;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.home-content {
+    position: relative;
+    display: flex;
+    padding: 0px 54px 19.2rem;
+    justify-content: space-around;
+}
+
+.home-intro {
+    margin-top: auto;
+}
+
+.home-content h3{
+    font-size: 3rem;
+}
+
+.home-content h1{
+    font-size:7rem;
+}
+
+.home-btn{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 450px;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.home-btn>a{
+    display: flex;
+    width: 210px;
+    border: #FFFFFF 3px solid;
+    color: #FFFFFF;
+    margin: 1.5rem 0 0 0;
+    letter-spacing: .25rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+    height: 54px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent !important;
+}
+
+.home-social i{
+    font-size: 2.4rem;
+}
+
+.home-social span{
+    font-size: 1.6rem;
+}
+
+@media (max-width: 1200px) {
+    .home-content{
+        flex-direction: column;
+        padding-bottom: 5.2rem;
+    }
+    .home-btn{
+        flex-direction: row;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    /* .home-content{
+        flex-direction: column;
+    } */
+    .home-btn{
+        flex-direction: column;
+        /* margin-top: 0; */
+    }
+    .home-social{
+        /* padding-bottom: 18rem; */
+    }
+    .home-content h3{
+        font-size: 1.5rem;
+    }
+    
+    .home-content h1{
+        font-size: 5.5rem;
+    }
+}

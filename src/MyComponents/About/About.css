@@ -1,0 +1,117 @@
+.my-about{
+    background-color: #FFFFFF;
+    padding: 0 100px 0;
+}
+
+.about-div{
+    padding-top: 100px;
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    padding-bottom: 100px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.about-me {
+    width: 60%;
+}
+
+.sub-about {
+    display: flex;
+    /* justify-content: space-around */
+}
+
+.about-head{
+    width: 25%;
+}
+.about-head>h3{
+    border-bottom: 3px solid #862121;
+    width: fit-content;
+}
+
+.more-about{
+    width: 75%;
+}
+
+.show-skills{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.skill-bars{
+    width: 60%;
+}
+
+.download-cv{
+    width: 35%;
+    margin-right: 0;
+
+    background: #0D0A0B;
+    border-color: #0D0A0B;
+    color: #FFFFFF;
+
+    margin-top: 6rem;
+}
+
+@media (max-width: 1000px){
+    .my-about{
+        background-color: #FFFFFF;
+        padding: 0 50px 0;
+    }
+    .about-me {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar{
+        /* width: 250px;
+        height: 250px; */
+    }
+
+    .sub-about{
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .about-head{
+        width: 100%
+    }
+
+    .more-about{
+        width: 100%;
+    }
+
+    .sub-about div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show-skills{
+        flex-direction: column;
+    }
+
+    .skill-bars{
+        width: 100%;
+    }
+    
+    .download-cv{
+        width: 100%;
+        margin-top: 0;
+    }
+}

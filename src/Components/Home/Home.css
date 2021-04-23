@@ -1,0 +1,6 @@
+.my-home{
+    background: #0D0A0B url(../../Assets/images/hero-bg.jpg) no-repeat center center;
+    background-size: cover !important;
+	-webkit-background-size: cover !important;
+    background-attachment: fixed;
+}

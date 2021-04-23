@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Element } from 'react-scroll'
+
+// import Header from './Components/Header/index'
+// import Home from './Components/Home/index';
+// import About from './Components/About/index';
+
+
+import Home from './MyComponents/Home/index';
+import About from './MyComponents/About/index';
+import Projects from './MyComponents/Projects/index';
+import Footer from './MyComponents/Footer/index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="top">
+      {/* <Header /> */}
+      
+      <Home />
+      <Element id='about' name='about'>
+        <About />
+      </Element>
+      <Element id='projects' name='projects'>
+        <Projects />
+      </Element>
+      <Footer />
     </div>
   );
 }
