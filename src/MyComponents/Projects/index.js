@@ -32,7 +32,7 @@ class Projects extends Component{
                             <a className="portfolio-overlay">
                                 <div className="portfolio-item-meta">
                                     <h5>Library Management System</h5>
-                                    <p>This application was created using ReactJS, SailsJS, and MongoDB database. It helps librarians to manage day to day activities</p>
+                                    <p>This application helps librarians to manage some of their day to day activities</p>
                                     <div>
                                         {/* You can find the code on {' '} */}
                                         <a href="https://github.com/Kaykeks1/siwesFrontend150805517">
